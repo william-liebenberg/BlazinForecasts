@@ -25,7 +25,7 @@ namespace Application.Behaviours
 			{
 				string requestName = typeof(TRequest).Name;
 
-				_logger.LogError(ex, "CleanArchitecture Request: Unhandled Exception for Request {Name} {@Request}", requestName, request);
+				_logger.LogError(ex, "Request: Unhandled Exception for Request {Name} {@Request}", requestName, request);
 
 				throw;
 			}
